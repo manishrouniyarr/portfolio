@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="intial .html" />
+    <script src="https://kit.fontawesome.com/25299a07da.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/Logo.png" width="140px" height="140px" style="border-radius: 50%;" alt="Logo">
+           
+          <ul id="sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p class="subtitle">Frontend Developer</p>
+          <h1 class="main-title">
+            Hi, I'm <span class="highlight">Manish</span> <br />
+            from <span class="highlight">Delhi Dwarka</span>
+          </h1>
+          <p class="description">
+            Passionate about creating seamless, responsive web experiences with modern technologies.
+          </p>
+          <a href="#contact" class="cta-button">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/users.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              I'm an aspiring software engineer and web developer with a hunger for learning.
+               I'm well-versed in C++, JavaScript, and React, and I'm also deeply interested in machine learning.
+                Beyond that, I have a solid grasp of Data Structures and Algorithms, as well as proficiency
+                 in managing databases and understanding Operating Systems.
+              </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experiance')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                
+                <li><span>Web development</span> <br>Web app developer</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experiance">
+              <ul>
+                <li><span>2022-till now</span> <br>create a design for private business Ltd.</li>
+                <li><span>2022-2023</span> <br> OPENED Web app development startup</li>
+                <!-- <li><span>App Development</span> <br>building android/ios apps </li> -->
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2023-2027</span> <br> Currently pursuing a B.Tech in CSE from GGSIPU</li>
+                <!-- <li><span>App Development</span> <br>building android/ios apps </li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- -----------------------services-------------------- -->
+
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Skills</h1>
+    <div class="services-list">
+
+      <div>
+        <i class="fa-solid fa-globe"></i>>
+        <h2>Web Design & Development</h2>
+        <p>
+          I specialize in frontend development, leveraging React.js to create interactive and responsive web applications. 
+          With expertise in API integration, I ensure seamless user experiences.
+        </p>
+        <a href="#">Learn More</a>
+          
+      </div>
+  
+      <div>
+        
+        <i class="fa-solid fa-d"></i> <i class="fa-solid fa-s"></i><i class="fa-solid fa-a"></i> >
+        <h2>Data Structures & Algorithms</h2>
+        <p>
+      I excel in Data Structures and Algorithms, solving complex problems efficiently. 
+      My optimized and scalable solutions demonstrate a strong foundation in computer science principles.
+    </p>
+           <a href="#">Learn more</a>
+          
+      </div>
+      <div>
+        
+        <i class="fa-brands fa-apple"></i> <i class="fa-brands fa-windows"></i> >
+        <h2>Operating Systems</h2>
+        <p>I have a comprehensive understanding of operating systems, including their core concepts and functionalities.
+           My knowledge encompasses process management, memory allocation, and file system structures, allowing me to develop efficient software solutions.
+           With a strong grasp of OS principles, I aim to create applications that seamlessly interact with underlying system resources.</p>
+           <a href="#">Learn more</a>
+          
+      </div>
+      <div>
+        
+          <i class="fa-solid fa-database"></i> >
+          <h2>Database Management</h2>
+          <p>
+            I have expertise in database design and optimization for both relational and NoSQL systems. 
+            My focus is on creating robust and scalable data-driven applications.
+          </p>
+           <a href="#">Learn more</a>
+              
+      </div>
+      <div class="service">
+        <i class="fa-solid fa-brain"></i>
+        <h2>Artificial Intelligence & Machine Learning</h2>
+        <p>
+          I am actively exploring AI/ML technologies, building intelligent solutions that leverage data for predictive analytics and decision-making.
+        </p>
+        <a href="#">Learn More</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- -----------------------portfolio-------------------------- -->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+          <img src="images/work-1.png" alt="">
+          <div class="layer">
+            <h3>Chat App</h3>
+            <p>this is really  awesome app</p>
+            <a href="#"><i class="fa-solid fa-comment"></i></a>
+          </div>
+     </div>
+      <div class="work">
+          <img src="images/work-2.png" alt="">
+          <div class="layer">
+            <h3>TicTacToe Game</h3>
+            <p>this is really  awesome app</p>
+            <a href=""><i class="fa-solid fa-gamepad"></i></a>
+          </div>
+     </div>
+      <div class="work">
+          <img src="images/work-3.png" alt="">
+          <div class="layer">
+            <h3>fitness App</h3>
+            <p>this is really  awesome app</p>
+            <a href=""><i class="fa-solid fa-gamepad"></i></a>
+          </div>
+     </div>
+    </div>
+    <a href="#" class="btn">see more</a>
+    <!-- <a href="#"class="sam">see more</a> -->
+  </div>
+</div>
+<!-- -------------------------contact--------------------------- -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <!-- Contact Left Section -->
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-envelope"></i> manish.rouniyar2060@gmail.com</p>
+        <p><i class="fa-solid fa-phone-volume"></i> +91-9065831248</p>
+        <div class="social-icons">
+          <a href="https://github.com/manishrouniyarr" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/manish-rouniyar-1067b428a/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+        <!-- Download CV button -->
+        <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+      </div>
+      
+      <!-- Contact Right Section (Form) -->
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" raw="6" placeholder="Your Message" cols="30" rows="10"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Copyright Section -->
+  <div class="copyright">
+    <p>copyright © .Manish_rouniyar</p>
+  </div>
+</div>
+
+   
+   
+   
+   
+   <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname){
+        for(tablink of tablinks){
+          tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu(){
+        sidemenu.style.right ="0"
+      }
+      function closemenu(){
+        sidemenu.style.right ="-200px"
+      }
+    </script>
+    
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbzUTNETjiW2BUGdBuqWvURfUG2CwUOMtxv4pJgkfEbfG6BvkwQr-NXfEqKT62hvnImrzg/exec"
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML = "Message sent"
+            setTimeout(function(){
+              msg.innerHTML =""
+            },5000)
+            form.reset()
+          } )
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+  </body>
+</html>

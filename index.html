@@ -1,272 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio website</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="style1.css" />
-    <link rel="stylesheet" href="intial .html" />
-    <script src="https://kit.fontawesome.com/25299a07da.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <div id="header">
-      <div class="container">
-        <nav>
-          <img src="images/Logo.png" width="140px" height="140px" style="border-radius: 50%;" alt="Logo">
-           
-          <ul id="sidemenu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
-          </ul>
-          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text">
-          <p class="subtitle">Frontend Developer</p>
-          <h1 class="main-title">
-            Hi, I'm <span class="highlight">Manish</span> <br />
-            from <span class="highlight">Delhi Dwarka</span>
-          </h1>
-          <p class="description">
-            Passionate about creating seamless, responsive web experiences with modern technologies.
-          </p>
-          <a href="#contact" class="cta-button">Get in Touch</a>
-        </div>
-      </div>
-    </div>
-
-    <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="images/users.png" />
-          </div>
-          <div class="about-col-2">
-            <h1 class="sub-title">About me</h1>
-            <p>
-              I'm an aspiring software engineer and web developer with a hunger for learning.
-               I'm well-versed in C++, JavaScript, and React, and I'm also deeply interested in machine learning.
-                Beyond that, I have a solid grasp of Data Structures and Algorithms, as well as proficiency
-                 in managing databases and understanding Operating Systems.
-              </p>
-
-            <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-              <p class="tab-links" onclick="opentab('experiance')">Experience</p>
-              <p class="tab-links" onclick="opentab('education')">Education</p>
-            </div>
-
-            <div class="tab-contents active-tab" id="skills">
-              <ul>
-                
-                <li><span>Web development</span> <br>Web app developer</li>
-              </ul>
-            </div>
-
-            <div class="tab-contents" id="experiance">
-              <ul>
-                <li><span>2022-till now</span> <br>create a design for private business Ltd.</li>
-                <li><span>2022-2023</span> <br> OPENED Web app development startup</li>
-                <!-- <li><span>App Development</span> <br>building android/ios apps </li> -->
-              </ul>
-            </div>
-
-            <div class="tab-contents" id="education">
-              <ul>
-                <li><span>2023-2027</span> <br> Currently pursuing a B.Tech in CSE from GGSIPU</li>
-                <!-- <li><span>App Development</span> <br>building android/ios apps </li> -->
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-<!-- -----------------------services-------------------- -->
-
-<div id="services">
-  <div class="container">
-    <h1 class="sub-title">My Skills</h1>
-    <div class="services-list">
-
-      <div>
-        <i class="fa-solid fa-globe"></i>>
-        <h2>Web Design & Development</h2>
-        <p>
-          I specialize in frontend development, leveraging React.js to create interactive and responsive web applications. 
-          With expertise in API integration, I ensure seamless user experiences.
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Website</title>
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500&display=swap" />
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/25299a07da.js" crossorigin="anonymous"></script>
+  <!-- AOS Library for scroll animations -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+<body>
+  <!-- Header Section -->
+  <header id="header">
+    <div class="container">
+      <nav>
+        <img src="images/Logo.png" width="140" height="140" style="border-radius: 50%;" alt="Logo" />
+        <ul id="sidemenu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Skills</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text" data-aos="fade-up">
+        <p class="subtitle">Full Stack MERN Developer</p>
+        <h1 class="main-title">
+          Hi, I'm <span class="highlight">Manish rouniyar</span>
+        </h1>
+        <p class="description">
+          I build robust, scalable web applications using MongoDB, Express, React, and Node.js.
         </p>
-        <a href="#">Learn More</a>
-          
-      </div>
-  
-      <div>
-        
-        <i class="fa-solid fa-d"></i> <i class="fa-solid fa-s"></i><i class="fa-solid fa-a"></i> >
-        <h2>Data Structures & Algorithms</h2>
-        <p>
-      I excel in Data Structures and Algorithms, solving complex problems efficiently. 
-      My optimized and scalable solutions demonstrate a strong foundation in computer science principles.
-    </p>
-           <a href="#">Learn more</a>
-          
-      </div>
-      <div>
-        
-        <i class="fa-brands fa-apple"></i> <i class="fa-brands fa-windows"></i> >
-        <h2>Operating Systems</h2>
-        <p>I have a comprehensive understanding of operating systems, including their core concepts and functionalities.
-           My knowledge encompasses process management, memory allocation, and file system structures, allowing me to develop efficient software solutions.
-           With a strong grasp of OS principles, I aim to create applications that seamlessly interact with underlying system resources.</p>
-           <a href="#">Learn more</a>
-          
-      </div>
-      <div>
-        
-          <i class="fa-solid fa-database"></i> >
-          <h2>Database Management</h2>
-          <p>
-            I have expertise in database design and optimization for both relational and NoSQL systems. 
-            My focus is on creating robust and scalable data-driven applications.
-          </p>
-           <a href="#">Learn more</a>
-              
-      </div>
-      <div class="service">
-        <i class="fa-solid fa-brain"></i>
-        <h2>Artificial Intelligence & Machine Learning</h2>
-        <p>
-          I am actively exploring AI/ML technologies, building intelligent solutions that leverage data for predictive analytics and decision-making.
-        </p>
-        <a href="#">Learn More</a>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- -----------------------portfolio-------------------------- -->
-<div id="portfolio">
-  <div class="container">
-    <h1 class="sub-title">My Work</h1>
-    <div class="work-list">
-      <div class="work">
-          <img src="images/work-1.png" alt="">
-          <div class="layer">
-            <h3>Chat App</h3>
-            <p>this is really  awesome app</p>
-            <a href="#"><i class="fa-solid fa-comment"></i></a>
-          </div>
-     </div>
-      <div class="work">
-          <img src="images/work-2.png" alt="">
-          <div class="layer">
-            <h3>TicTacToe Game</h3>
-            <p>this is really  awesome app</p>
-            <a href=""><i class="fa-solid fa-gamepad"></i></a>
-          </div>
-     </div>
-      <div class="work">
-          <img src="images/work-3.png" alt="">
-          <div class="layer">
-            <h3>fitness App</h3>
-            <p>this is really  awesome app</p>
-            <a href=""><i class="fa-solid fa-gamepad"></i></a>
-          </div>
-     </div>
-    </div>
-    <a href="#" class="btn">see more</a>
-    <!-- <a href="#"class="sam">see more</a> -->
-  </div>
-</div>
-<!-- -------------------------contact--------------------------- -->
-<div id="contact">
-  <div class="container">
-    <div class="row">
-      <!-- Contact Left Section -->
-      <div class="contact-left">
-        <h1 class="sub-title">Contact Me</h1>
-        <p><i class="fa-solid fa-envelope"></i> manish.rouniyar2060@gmail.com</p>
-        <p><i class="fa-solid fa-phone-volume"></i> +91-9065831248</p>
-        <div class="social-icons">
-          <a href="https://github.com/manishrouniyarr" target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/manish-rouniyar-1067b428a/" target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a>
-        </div>
-        <!-- Download CV button -->
-        <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+        <a href="#contact" class="cta-button">Get in Touch</a>
       </div>
       
-      <!-- Contact Right Section (Form) -->
-      <div class="contact-right">
-        <form name="submit-to-google-sheet">
-          <input type="text" name="Name" placeholder="Your Name" required>
-          <input type="email" name="Email" placeholder="Your Email" required>
-          <textarea name="Message" raw="6" placeholder="Your Message" cols="30" rows="10"></textarea>
-          <button type="submit" class="btn btn2">Submit</button>
-        </form>
-        <span id="msg"></span>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1" data-aos="fade-right">
+          <img src="images/users.png" alt="User" />
+        </div>
+        <div class="about-col-2" data-aos="fade-left">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+            I'm a dedicated Full Stack MERN developer with a passion for building scalable, robust web applications.  
+            I'm proficient in React.js, Node.js, Express, and MongoDB, and I also have a strong foundation in data structures, algorithms, operating systems, and database management.  
+            Currently, I'm pursuing a B.Tech in Computer Science and Engineering at Guru Gobind Singh Indraprastha University (GGSIPU) in Delhi, India, where I continually explore new technologies to expand my skill set and stay at the forefront of industry trends.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+            <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+            <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+          </div>
+        
+          <!-- Skills Tab -->
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li>
+                <span>Full Stack MERN Developer</span><br />
+                React.js, Node.js, Express.js, MongoDB
+              </li>
+              <li>
+                <span>Languages</span><br />
+                C, C++, JavaScript
+              </li>
+              <li>
+                <span>Other Technologies</span><br />
+                HTML, CSS, REST APIs, GraphQL, Docker
+              </li>
+            </ul>
+          </div>
+        
+          <!-- Experience Tab -->
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li>
+                <span>Aug 2021 – Jan 2022</span><br />
+                <a href="https://www.nea.org.np/regional/1" target="_blank" rel="noopener noreferrer">Nepal Electricity Authority</a>, Biratnagar, Nepal<br />
+                Electrical Systems Intern – Intern Head<br />
+                Led a team of 8 interns to boost efficiency by 20%, designed and maintained compliant wiring systems, and improved grid stability by reducing downtime by 15%.
+              </li>
+            </ul>
+          </div>
+          
+        
+          <!-- Education Tab -->
+          <div class="tab-contents" id="education">
+            <ul>
+              <li>
+                <span>2023 - 2027</span><br />
+                Pursuing B.Tech in Computer Science & Engineering<br />
+                at Guru Gobind Singh Indraprastha University (GGSIPU), Delhi, India
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <div class="container">
+      <h1 class="sub-title">My Skills</h1>
+      <div class="services-list">
+        <div data-aos="fade-up">
+          <i class="fa-solid fa-code"></i>
+          <h2>Languages</h2>
+          <p>C, C++, JavaScript</p>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="100">
+          <i class="fa-solid fa-laptop-code"></i>
+          <h2>Frameworks</h2>
+          <p>React.js, Tailwind CSS, Node.js, Express.js</p>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="200">
+          <i class="fa-solid fa-cogs"></i>
+          <h2>Technologies</h2>
+          <p>HTML, CSS, REST APIs, GraphQL</p>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="300">
+          <i class="fa-solid fa-database"></i>
+          <h2>Database</h2>
+          <p>MongoDB, MySQL</p>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="400">
+          <i class="fa-solid fa-server"></i>
+          <h2>DevOps</h2>
+          <p>Docker</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">Projects</h1>
+      <div class="work-list">
+        <div class="work" data-aos="zoom-in">
+          <img src="images/work-1.png" alt="VirtualLearnX" />
+          <div class="layer">
+            <h3>VirtualLearnX</h3>
+            <p>This is an awesome app</p>
+            <a href="https://virtulearnx.netlify.app/" target="_blank" rel="noopener noreferrer">
+              <i class="fa-solid fa-comment"></i>
+            </a>
+          </div>
+        </div>
+        <div class="work" data-aos="zoom-in" data-aos-delay="100">
+          <img src="images/work-2.png" alt="DigiHub" />
+          <div class="layer">
+            <h3>DigiHub</h3>
+            <p>This is an awesome app</p>
+            <a href="https://digihb.netlify.app/" target="_blank" rel="noopener noreferrer">
+              <i class="fa-solid fa-gamepad"></i>
+            </a>
+          </div>
+        </div>
+        <div class="work" data-aos="zoom-in" data-aos-delay="200">
+          <img src="images/work-3.png" alt="Quick Chat App" />
+          <div class="layer">
+            <h3>Quick Chat App</h3>
+            <p>This is an awesome app</p>
+            <a href="https://github.com/manishrouniyarr/Quick-Chat" target="_blank" rel="noopener noreferrer">
+              <i class="fa-solid fa-gamepad"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <a href="https://github.com/manishrouniyarr" class="btn" target="_blank" rel="noopener noreferrer">See More</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <!-- Contact Left -->
+        <div class="contact-left" data-aos="fade-right">
+          <h1 class="sub-title">Contact</h1>
+          <p><i class="fa-solid fa-envelope"></i> manish.rouniyar2060@gmail.com</p>
+          <p><i class="fa-solid fa-phone-volume"></i> +91-9065831248</p>
+          <div class="social-icons">
+            <a href="https://github.com/manishrouniyarr" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/manish-rouniyar-1067b428a/" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+          <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <!-- Contact Right -->
+        <div class="contact-right" data-aos="fade-left">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input type="email" name="Email" placeholder="Your Email" required />
+            <textarea name="Message" placeholder="Your Message" cols="30" rows="10"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; Manish_Rouniyar_2025</p>
+    </div>
+  </section>
+ 
+ 
   
-  <!-- Copyright Section -->
-  <div class="copyright">
-    <p>copyright © .Manish_rouniyar</p>
-  </div>
-</div>
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out'
+    });
+  </script>
+  <script>
+    // Tab functionality
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(event, tabname) {
+      for (let tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (let tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
 
-   
-   
-   
-   
-   <script>
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tab-contents");
-      function opentab(tabname){
-        for(tablink of tablinks){
-          tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-          tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-      }
-    </script>
+    // Mobile menu functionality
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+      sidemenu.style.right = "0";
+      sidemenu.classList.add("open");
+    }
+    function closemenu(){
+      sidemenu.style.right = "-200px";
+      sidemenu.classList.remove("open");
+    }
 
-    <script>
-      var sidemenu = document.getElementById("sidemenu");
-      function openmenu(){
-        sidemenu.style.right ="0"
-      }
-      function closemenu(){
-        sidemenu.style.right ="-200px"
-      }
-    </script>
-    
-    <script>
-      const scriptURL = "https://script.google.com/macros/s/AKfycbzUTNETjiW2BUGdBuqWvURfUG2CwUOMtxv4pJgkfEbfG6BvkwQr-NXfEqKT62hvnImrzg/exec"
-      const form = document.forms['submit-to-google-sheet']
-      const msg = document.getElementById("msg")
-    
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => {
-            msg.innerHTML = "Message sent"
-            setTimeout(function(){
-              msg.innerHTML =""
-            },5000)
-            form.reset()
-          } )
-          .catch(error => console.error('Error!', error.message))
-      })
-    </script>
-  </body>
+    // Form submission via Google Sheets
+    const scriptURL = "https://script.google.com/macros/s/AKfycbzUTNETjiW2BUGdBuqWvURfUG2CwUOMtxv4pJgkfEbfG6BvkwQr-NXfEqKT62hvnImrzg/exec";
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML = "Message sent";
+          setTimeout(() => { msg.innerHTML = ""; }, 5000);
+          form.reset();
+        })
+        .catch(error => console.error('Error!', error.message));
+    });
+  </script>
+</body>
 </html>
